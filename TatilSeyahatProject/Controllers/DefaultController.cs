@@ -24,7 +24,7 @@ namespace TatilSeyahatProject.Controllers
 
         public PartialViewResult Partial1()
         {
-            var degerler = c.Blogs.OrderByDescending(x => x.ID).Take(2).ToList();
+            var degerler = c.Blogs.OrderByDescending(x => x.ID).Take(3).ToList();
             return PartialView(degerler);
         }
 
